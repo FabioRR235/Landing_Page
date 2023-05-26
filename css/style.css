@@ -9,6 +9,12 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+  section{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    min-height: 100vh;
+  }
   /*Links*/
   a {
     color: #fff;
@@ -121,7 +127,19 @@
     border: 5px solid white;
     border-radius: 15px;
   }
-
+  /*Hidden*/
+  .hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1.2s;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.2s;
+    transform: translateX(0);
+  }
   @media (max-width: 999px) {
     body {
       overflow-x: hidden;
