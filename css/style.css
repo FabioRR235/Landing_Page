@@ -32,12 +32,12 @@
   /*Nav-Bar*/
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: 'Playfair', serif;
     align-items: center;
     background: transparent;
     height: 8vh;
-    padding: 10px;
+    padding-top: 18px;
   }
   .logo{
     display: flex;
@@ -59,7 +59,7 @@
     background-color: #218842;
     border-radius: 25px;
     padding: 10px;
-   
+    text-align: center;
   }
   .nav-list li:hover{
     transform: translateY(-10px);
@@ -92,11 +92,12 @@
     background-color: bisque;
     color: #218842;
      font-family: 'Playfair', serif;
-    width: 50%;
-    margin-left: 100px;
-    margin-top: 10%;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 50px;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
   }
   .text h1{
     font-size: 50px;
@@ -106,13 +107,19 @@
     font-size: 30px;
   }
 
-  .cont-principal img{
+  .imagem {
     display: flex;
-    float: right;
-    margin: 15px;
+    justify-content: center;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+  }
+  .imagem img{
+    max-width: 100%;
+    height: auto;
     border: 5px solid white;
     border-radius: 15px;
-
   }
 
   @media (max-width: 999px) {
@@ -121,11 +128,14 @@
     }
     .nav-list {
       position: absolute;
-      top: 8vh;
+      top: 12vh;
       right: 0;
       width: 50vw;
       height: 92vh;
       background: #476250;
+      border: 2px solid #218842;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
