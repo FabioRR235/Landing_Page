@@ -8,6 +8,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+    animation: moverBackground 10s infinite linear;
+  }
+  @keyframes moverBackground {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
   }
   section{
     display: grid;
